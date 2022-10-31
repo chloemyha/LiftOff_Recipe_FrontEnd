@@ -16,7 +16,6 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {}
 
   userLogin() {
-    console.log(this.user);
     this.loginservice.loginUser(this.user).subscribe(
       (data) => {
         // pattern to persist user and succeed in auth
